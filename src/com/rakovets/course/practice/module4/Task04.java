@@ -27,5 +27,13 @@ public class Task04 {
 		//TODO
 		// Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
 		// Для проверки решения необходимо запустить @Test для данного class (в директории test)
+		double finalHeals;
+		double currentHealthPoints = healthPoints;
+		for ( int i = 0; i < hoursAfterRespawn; i++ ) {
+			finalHeals = currentHealthPoints * regenerationPercentFromCurrentHealth / 100;
+			currentHealthPoints = currentHealthPoints + finalHeals;
+		}
+		healthPoints = (int)currentHealthPoints;
+		System.out.println(healthPoints);
 	}
 }
