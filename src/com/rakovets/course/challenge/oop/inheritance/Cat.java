@@ -1,3 +1,5 @@
+package com.rakovets.course.challenge.oop.inheritance;
+
 public class Cat {
     String name;
 
@@ -16,8 +18,8 @@ public class Cat {
     void getName(){
         System.out.println(this.name);
     }
-     SetName(name){
-
+    public void SetName(String name){
+        this.name = name;
      }
 
 }
