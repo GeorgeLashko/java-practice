@@ -5,6 +5,7 @@ public class Program {
         Cat sam = new Cat("Sam");
         Cat tom = new Siamese("Tom");
         Cat dima = new Sphynx("Dima");
+        Person gim = new Person(50);
         sam.mew();
         sam.purr();
         tom.purr();

@@ -22,7 +22,7 @@ public class Triangle extends Figure {
     @Override
     public double getArea() {
        double halfOfThePerimeter =  this.getPerimeter()/2;
-        System.out.println(Math.sqrt(halfOfThePerimeter * (halfOfThePerimeter - this.firstSide) * (halfOfThePerimeter - this.secondSide) * (halfOfThePerimeter - this.thirdSide)));
+        System.out.println(halfOfThePerimeter * (halfOfThePerimeter - this.firstSide) * (halfOfThePerimeter - this.secondSide) * (halfOfThePerimeter - this.thirdSide));
         return (Math.sqrt(halfOfThePerimeter * (halfOfThePerimeter - this.firstSide) * (halfOfThePerimeter - this.secondSide) * (halfOfThePerimeter - this.thirdSide)));
     }
 }
