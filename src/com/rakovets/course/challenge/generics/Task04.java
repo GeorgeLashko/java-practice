@@ -5,12 +5,11 @@ public class Task04 {
         T summa;
         T maximal = values[0];
 
-        for (int i = 1; i <= values.length; i++){
-            if (maximal.compareTo(values[i]) > 0){
+        for (int i = 0; i <= (values.length)-1; i++){
+            if (maximal.compareTo(values[i]) < 0){
                 maximal = values[i];
             }
         }
-        System.out.println(maximal);
         return maximal;
     }
 }
