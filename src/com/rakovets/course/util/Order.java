@@ -10,6 +10,9 @@ public class Order {
     public void addPizzas(Pizza pizza, int count) {
         orderPizzas.put(pizza, count);
     }
+    public void orderCost(){
+
+    }
 
 
 }
